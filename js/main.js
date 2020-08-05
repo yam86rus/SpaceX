@@ -6,3 +6,5 @@ var instance = new vidbg('.video', {
     // overlayColor: '#000', // The overlay color as a HEX
     // overlayAlpha: 0.3 // The overlay alpha. Think of this as the last integer in RGBA()
   });
+
+  var rellax = new Rellax('.rocket');
