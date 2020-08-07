@@ -29,6 +29,7 @@ body {
     font-size: 12px;
     line-height: 14px;
 }
+
 .secondary-nav .item-link {
     color: #808080;
 }
@@ -44,48 +45,55 @@ body {
     font-size: 64px;
     line-height: 75px;
 }
-.description{
+
+.description {
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 140%;
     max-width: 260px;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
-.description::after{
+
+.description::after {
     content: '';
     display: block;
     width: 1px;
     height: 60px;
     background: #fff;
     margin: 26px auto;
-    
+
 }
-.video{
+
+.video {
     height: 750px;
     max-width: 1230px;
     width: 90%;
     margin: 0 auto;
 }
-.features{
+
+.features {
     position: relative;
     max-width: 1230px;
     width: 90%;
     margin: auto;
     padding: 100px 0;
 }
-.features-title{
+
+.features-title {
     font-weight: bold;
     font-size: 24px;
     line-height: 140%;
     text-transform: uppercase;
     margin-bottom: 45px;
 }
+
 /* привет табличке из 2020 лол */
-.table{
+.table {
     margin-bottom: 200px;
 }
-.table-column{
+
+.table-column {
     width: 300px;
     padding: 7px 0;
     font-style: normal;
@@ -93,7 +101,8 @@ body {
     font-size: 18px;
     line-height: 179%;
 }
-.features-text{
+
+.features-text {
     max-width: 490px;
     font-style: normal;
     font-weight: normal;
@@ -101,7 +110,7 @@ body {
     line-height: 29px;
 }
 
-.rocket{
+.rocket {
     position: absolute;
     max-width: 300px;
     top: 300px;
@@ -109,26 +118,28 @@ body {
     z-index: 50;
 }
 
-.footer{
+.footer {
     padding: 130px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 
 }
-.footer-nav .item-link{
+
+.footer-nav .item-link {
     font-size: 18px;
     line-height: 21px;
 }
 
-.footer .logo{
+.footer .logo {
     margin: 0 0 43px 0;
 }
-.footer-nav{
+
+.footer-nav {
     margin: 0 0 28px 0;
 }
 
-.footer-text{
+.footer-text {
     font-size: 18px;
     line-height: 21px;
     color: #808080;
@@ -136,11 +147,13 @@ body {
     margin-bottom: 30px;
     margin-top: 0;
 }
-.footer-link{
+
+.footer-link {
     color: #808080;
     text-decoration: none;
 }
-.button{
+
+.button {
     color: #fff;
     min-width: 260px;
     padding: 20px 0;
@@ -148,4 +161,64 @@ body {
     border: 2px solid #fff;
     text-decoration: none;
     border-radius: 6px;
+}
+
+/* media */
+
+@media(max-width:960px) {
+    .rocket {
+        max-width: 230px;
+    }
+
+    .table-column {
+        width: 250px;
+    }
+}
+
+@media(max-width:768px) {
+    .header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .header .logo{
+        margin-bottom: 20px;
+    }
+    .header .main-nav{
+        margin-bottom: 20px;
+    }
+    .rocket{
+        max-width: 180px;
+    }
+    .video{
+        width: 100%;
+    }
+}
+@media(max-width:576px) {
+    .rocket{
+        position: static;
+        margin-bottom: 30px;
+    }
+    .table{
+        margin-bottom: 0;
+    }
+    .table-column{
+        font-size: 14px;
+        width: 150px;
+    }
+    .footer-nav .list{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer-nav .item{
+        margin-bottom: 10px;
+    }
+    .footer {
+        text-align: center;
+    }
+    .main{
+        padding-top: 50px;
+    }
+    .features{
+        padding-bottom: 0;
+    }
 }
