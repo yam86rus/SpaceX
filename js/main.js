@@ -6,9 +6,11 @@ var instance = new vidbg('.video', {
     // overlayColor: '#000', // The overlay color as a HEX
     // overlayAlpha: 0.3 // The overlay alpha. Think of this as the last integer in RGBA()
   });
-
+// ИНициализируем скаченную библиотеку параллакса
   var rellax = new Rellax('.rocket');
 
   if(document.body.clientWidth < 576) {
     rellax.destroy();
   }
+// Инициализируем скаченную библиотеку AOS
+  AOS.init();
