@@ -20,6 +20,11 @@ body {
     display: flex;
     list-style: none;
 }
+.list a:hover{
+    text-decoration: underline;
+    color: #fff;
+    
+}
 
 .item-link {
     color: #fff;
@@ -119,6 +124,8 @@ body {
 }
 
 .footer {
+    background-image: url(../img/moon.webp);
+    background-size: cover;
     padding: 130px 0;
     display: flex;
     flex-direction: column;
@@ -142,14 +149,13 @@ body {
 .footer-text {
     font-size: 18px;
     line-height: 21px;
-    color: #808080;
     text-decoration: none;
     margin-bottom: 30px;
     margin-top: 0;
 }
 
 .footer-link {
-    color: #808080;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -161,6 +167,11 @@ body {
     border: 2px solid #fff;
     text-decoration: none;
     border-radius: 6px;
+    transition: all .3s ease-in-out;
+}
+.button:hover{
+    background: #fff;
+    color: #010001;
 }
 
 /* media */
